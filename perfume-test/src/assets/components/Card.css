@@ -1,0 +1,189 @@
+.retangle-g {
+  position: absolute;
+  width: 600px;
+  height: 450px;
+  left: 420px;
+  top: 175px;
+
+  background-color: white;
+}
+
+.card{
+  position: relative;
+  width: 600px;
+  height: 450px;
+  left: 420px;
+  top: 175px;
+}
+.group-5{
+  position: absolute;
+  width: 600px;
+  height: 450px;
+  left: 0px;
+  top: 0px;
+}
+
+
+.tittle{
+  position: absolute;
+  height: 96px;
+  left: 55.33%;
+  right: 5.33%;
+  top: calc(50% - 96px/2 - 110px);
+
+  /* Display */
+
+  font-family: 'Fraunces';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 32px;
+  /* or 100% */
+
+
+  /* Gunmetal */
+
+  color: #1C232B;
+}
+
+
+.retangle-cart {
+  position: absolute;
+  left: 55.33%;
+  right: 5.33%;
+  top: 82.22%;
+  bottom: 7.11%;
+  
+  /* Deep Aquamarine */
+  
+  background: #3D8168;
+  border-radius: 8px;
+}
+
+.product-cart{
+  position: absolute;
+  width: 14.39px;
+  height: 16px;
+  left: 0px;
+  top: 1px;
+}
+
+.description{
+  position: absolute;
+  height: 92px;
+  left: 55.25%;
+  right: 5.25%;
+  top: calc(50% - 92px/2 + 8px);
+  
+  /* Body */
+  
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 23px;
+  /* or 164% */
+  
+  
+  /* Aurometal Saurus */
+  
+  color: #6C7289;
+  
+}
+
+.name{
+  position: absolute;
+  height: 15px;
+  left: 55.25%;
+  right: 29.42%;
+  top: calc(50% - 15px/2 - 185.5px);
+
+  /* Overline */
+
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  /* identical to box height */
+
+  letter-spacing: 5px;
+
+  /* Aurometal Saurus */
+
+  color: #6C7289;
+}
+
+.discount {
+  
+  position: absolute;
+  height: 23px;
+  left: 79.67%;
+  right: 12.33%;
+  top: calc(50% - 23px/2 + 99.5px);
+
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 23px;
+  /* identical to box height, or 177% */
+
+  text-decoration-line: line-through;
+
+  /* Aurometal Saurus */
+
+  color: #6C7289;
+}
+
+.price{
+  position: absolute;
+  height: 32px;
+  left: 55.33%;
+  right: 23.5%;
+  top: calc(50% - 32px/2 + 99px);
+
+  /* Display */
+
+  font-family: 'Fraunces';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 32px;
+  /* identical to box height, or 100% */
+
+
+  /* Deep Aquamarine */
+
+  color: #3D8168;
+}
+
+.txt{
+  position: absolute;
+  height: 17px;
+  left: 23.42%;
+  right: 0%;
+  top: calc(50% - 17px/2 - 0.5px);
+  
+  /* Button Text */
+  
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  /* identical to box height */
+  
+  
+  /* Pure White */
+  
+  color: #FFFFFF;
+}
+
+.retangle{
+  position: absolute;
+  width: 300px;
+  height: 450px;
+  left: 0px;
+  top: 0px;
+}
