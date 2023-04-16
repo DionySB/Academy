@@ -1,0 +1,22 @@
+@media (min-width:1440px) and (min-height: 800px) {
+  body{
+  position: relative;
+  width: 1440px;
+  height: 800px;
+  
+  /* Cream (BG) */
+  
+  background: #F2EAE2;
+  }
+  }
+  
+    body{
+    position: relative;
+    width: 1440px;
+    height: 800px;
+  
+    /* Cream (BG) */
+  
+    background: #F2EAE2;
+    }
+    
