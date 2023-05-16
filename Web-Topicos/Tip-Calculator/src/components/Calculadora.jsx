@@ -1,56 +1,73 @@
 import cifrao from "../images/cifrao.png";
 import pessoa from "../images/pessoa.png";
+import { 
+  ButtonsContainer,
+  ContaContainer,
+  GorjetaContainer,
+  GorjetaTotalContainer,
+  InputContainer,
+  Label,
+  MainContainer,
+  PessoasContainer,
+  PorcentagemContainer,
+  ResultadosContainer,
+  TotalContainer,
+} from "./Calculadora.styles";
 
 export function Calculadora() {
   return (
-    <main>
+    <MainContainer>
       <form action="">
-        <div className="bill-box">
-          <label htmlFor="bill">Conta</label>
-          <div className="input-box">
-          <img src={cifrao} alt="logo"></img>
+        <ContaContainer>
+          <Label htmlFor="bill">Conta</Label>
+          <InputContainer>
+            <img src={cifrao} alt="logo"></img>
             <input id="bill" type="number" placeholder="0" />
-          </div>
-        </div>
+          </InputContainer>
+        </ContaContainer>
 
-        <div className="tip-box">
-          <label htmlFor="custom-tip">Selecione a Porcentagem %</label>
-          <div>
+        <PorcentagemContainer>
+          <Label htmlFor="custom-tip">Selecione a Porcentagem %</Label>
+          <ButtonsContainer>
             <input type="button" value="5%" />
             <input type="button" value="10%" />
             <input type="button" value="15%" />
             <input type="button" value="25%" />
             <input type="button" value="50%" />
-            <input type="text" id="custom-tip" placeholder="Outro" />
-          </div>
-        </div>
+            <input type="number" id="custom-tip" placeholder="Outro" />
+          </ButtonsContainer>
+        </PorcentagemContainer>
 
-        <div className="people-box">
-          <label htmlFor="">Número de Pessoas</label>
-          <div className="input-box">
-          <img src={pessoa} alt="pessoa"></img>
+        <PessoasContainer>
+          <Label htmlFor="">Número de Pessoas</Label>
+          <InputContainer>
+            <img src={pessoa} alt="pessoa"></img>
             <input type="number" id="people" placeholder="0" />
-          </div>
-        </div>
+          </InputContainer>
+        </PessoasContainer>
       </form>
 
-      <section className="results">
-        <div className="tip-amount">
-          <p>
-            Gorjeta <br />
-            <span>/ pessoa</span>
-          </p>
-          <p>R$ 0.00</p>
-        </div>
+      <ResultadosContainer>
+        <GorjetaTotalContainer>
+          <GorjetaContainer>
+            <p>
+              Gorjeta <br />
+              <span>/ pessoa</span>
+            </p>
+            <p>R$ 0.00</p>
+          </GorjetaContainer>
 
-        <div className="total">
-          <p>
-            Total <br />
-            <span>/ pessoa</span>
-          </p>
-          <p>R$ 0.00</p>
-        </div>
-      </section>
-    </main>
+          <TotalContainer>
+            <p>
+              Total <br />
+              <span>/ pessoa</span>
+            </p>
+            <p>R$ 0.00</p>
+          </TotalContainer>
+          </GorjetaTotalContainer>
+
+          <button>Limpar</button>
+      </ResultadosContainer>
+    </MainContainer>
   )
 }
