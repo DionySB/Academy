@@ -32,6 +32,11 @@ export const InputContainer = styled.div`
   align-items: center;
   border-radius: 5px;
 
+  &:has(input:hover),
+  &:has(input:focus){
+    outline: 2px solid #26cdae;
+  }
+
   input {
       border: 0;
       background: transparent;
@@ -74,6 +79,11 @@ export const ButtonsContainer = styled.div`
   input[type="button"] {
      background: #00474B;
      color: #F3F9FA;
+
+      &:hover{
+        background: #9fe8df;
+        cursor: pointer;
+      }
   }
 
   input#custom-tip {
@@ -81,6 +91,11 @@ export const ButtonsContainer = styled.div`
       background: #F3F9FA;
       text-align: center;
       color: #00474B;
+
+      &:focus,
+      &:hover{
+        outline: 2px solid #26cdae;
+      }
 
       &::placeholder { 
         color: #547878;
@@ -101,56 +116,3 @@ export const ButtonsContainer = styled.div`
 export const PorcentagemContainer = styled(ContaContainer)``
 
 export const PessoasContainer = styled(ContaContainer)``
-
-export const ResultadosContainer = styled.div`
-  background: #00474B;
-  border-radius: 15px;
-  padding: 2rem 1.5rem;
-
-  button {
-    width: 100%;
-    background: #26C2AE;
-    color: #00474B;
-    border: 0;
-    font-size: 1.25rem;
-    padding-block: 0.5rem;
-    text-transform: uppercase;
-    border-radius: 5px;
-  }
-
-  @media(min-width: 950px) {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-`
-
-export const GorjetaContainer = styled.div`
-  display: flex;
-  margin-bottom: 1.25rem;
-  justify-content: space-between;
-  align-items: center;
-
-  p:first-child {
-    color: white;
-    line-height: 1.5rem;
-
-    span {
-      color: #7F9D9F;
-      font-size: 0.75rem;
-    }
-  }
-
-  p:last-child {
-    color: #26C2AE;
-    font-size: 2rem;
-    line-height: 3rem;
-  }
-`
-
-export const TotalContainer = styled(GorjetaContainer)`
- margin-bottom: 2rem;
-`
-
-export const GorjetaTotalContainer = styled.div``
- 
