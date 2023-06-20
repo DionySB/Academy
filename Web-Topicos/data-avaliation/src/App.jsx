@@ -1,11 +1,9 @@
-import { useState } from "react";
-import { IncreaseOrDecrease } from "./components/IncreaseOrDecrease";
-
+import { Increase } from "./components/Increase";
 
 export function App() {
   return(
     <>
-    <IncreaseOrDecrease />
+    <Increase />
     </>
   )
 }
